@@ -1,0 +1,2 @@
+rootProject.name = "ditheory"
+include ':ditheory'
