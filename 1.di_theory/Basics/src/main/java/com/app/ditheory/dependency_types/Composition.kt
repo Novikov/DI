@@ -1,4 +1,4 @@
-package com.app.ditheory
+package com.app.ditheory.dependency_types
 
 /**
  * Данный тип связи имеет ряд минусов

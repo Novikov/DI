@@ -1,2 +1,2 @@
 rootProject.name = "ditheory"
-include ':dependecy_types'
+include ':Basics'

@@ -1,4 +1,4 @@
-package com.app.ditheory
+package com.app.ditheory.dependency_types
 
 /**
  * Этого можно добиться по-разному: использовать абстрактный класс вершиной иерархии
