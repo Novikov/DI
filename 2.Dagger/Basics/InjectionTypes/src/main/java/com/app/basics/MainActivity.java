@@ -28,9 +28,10 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "constructor injection in Activity: " + simpleClass.toString());
     }
 
-
-    //При иньекции в метод - он вызывается даже если мы сами его не вызываем.
+    //При иньекции в метод - Dagger сам вызовет данный метод.
+    //Говорят это может пригодиться при инициализации параметров класс после создания его экземпляра.
     //Dagger доолжен понимать где взять каждый параметр метода. Если добавим один неизвестный, то он не сбилдится.
+
     @Inject
     public void testMethod(String providedString){
         Log.i(TAG, "property injection in Activity method:" + providedString);

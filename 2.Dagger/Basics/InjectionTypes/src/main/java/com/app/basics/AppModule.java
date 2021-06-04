@@ -10,4 +10,9 @@ public class AppModule {
     String provideString(){
         return "Hello";
     }
+
+    @Provides
+    Integer provideInt(){
+        return 5;
+    }
 }
