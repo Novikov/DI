@@ -9,12 +9,14 @@ import org.koin.android.ext.android.inject
 class MainActivity : AppCompatActivity() {
 
     private val str: String by inject()
-    private val value: Integer by inject()
+    private val a:A by inject()
+    private val value: Boolean by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.i(TAG, "onCreate: $str")
+        Log.i(TAG, "onCreate: ${a.number}")
 
         val button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
