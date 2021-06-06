@@ -12,6 +12,9 @@ public interface AppComponent {
         @BindsInstance
         Builder firstInt(int firstInt);
 
+        @BindsInstance
+        Builder firstBool(boolean firstBool);
+
         AppComponent build();
     }
 }

@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     AppComponent appComponent;
 
     @Inject
-    String firstInt;
+    String firstString;
 
     @Inject
     Simple simple;
@@ -22,11 +22,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        appComponent = DaggerAppComponent.builder().firstInt(5).build();
+        /**
+         * Мы можем забывать вызвать все методы и приложение упадет.
+         * Idea нам никак не подскажет что мы забыли вызвать.
+         * Вот почему нужно использовать Factory вместо Builder.
+         * */
+
+        appComponent = DaggerAppComponent.builder()
+                .firstInt(5)
+                .firstBool(true)
+                .build();
 
         appComponent.inject(this);
 
-        Log.i(TAG, "firstInt: " + firstInt);
+        Log.i(TAG, "firstInt: " + firstString);
         Log.i(TAG, "simple: " + simple.getInfo());
     }
 
