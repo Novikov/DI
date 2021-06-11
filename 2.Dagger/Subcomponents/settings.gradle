@@ -1,2 +1,3 @@
 rootProject.name = "Subcomponents"
 include ':PlusMethod'
+include ':AnnotationParameter'
