@@ -1,4 +1,5 @@
 rootProject.name = "AndroidInjector"
 include ':AppActivityHierarchy'
-include ':ModifiedAppActivityHierarchy'
+include ':AppActivityHierarchyModified'
 include ':AppActivityFragmentHierarchy'
+include ':AppActivityFragmentHierarchyModified'

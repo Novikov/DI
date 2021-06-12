@@ -11,8 +11,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/AppActivityFragmentHierarchy" />
+            <option value="$PROJECT_DIR$/AppActivityFragmentHierarchyModified" />
             <option value="$PROJECT_DIR$/AppActivityHierarchy" />
-            <option value="$PROJECT_DIR$/ModifiedAppActivityHierarchy" />
+            <option value="$PROJECT_DIR$/AppActivityHierarchyModified" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
