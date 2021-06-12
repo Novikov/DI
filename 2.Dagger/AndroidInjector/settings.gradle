@@ -1,2 +1,2 @@
 rootProject.name = "AndroidInjector"
-include ':app'
+include ':AppActivityHierarchy'
