@@ -7,6 +7,6 @@ import dagger.Provides;
 public class ActivityCustomModule {
     @Provides
     String provideStringFromActivity(){
-        return "String from activity";
+        return "String from activity module";
     }
 }

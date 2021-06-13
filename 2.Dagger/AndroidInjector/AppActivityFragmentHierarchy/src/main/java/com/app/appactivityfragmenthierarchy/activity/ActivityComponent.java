@@ -8,7 +8,7 @@ import dagger.android.AndroidInjection;
 import dagger.android.AndroidInjectionModule;
 import dagger.android.AndroidInjector;
 
-@Subcomponent(modules = {AndroidInjectionModule.class,ActivityCustomModule.class, FragmentModule.class})
+@Subcomponent(modules = {ActivityCustomModule.class, FragmentModule.class})
 public interface ActivityComponent extends AndroidInjector<MainActivity> {
     @Subcomponent.Factory
     interface Factory extends AndroidInjector.Factory<MainActivity> { }

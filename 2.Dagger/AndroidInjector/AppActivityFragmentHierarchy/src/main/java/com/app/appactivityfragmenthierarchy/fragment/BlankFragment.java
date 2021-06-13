@@ -20,6 +20,9 @@ public class BlankFragment extends Fragment {
     @Inject
     String str;
 
+    @Inject
+    int numb;
+
     @Override
     public void onAttach(@NonNull Context context) {
         AndroidSupportInjection.inject(this);
@@ -29,7 +32,7 @@ public class BlankFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.i(TAG, str);
+        Log.i(TAG, str + " and number " + numb + " from fragment module");
     }
 
     @Override
