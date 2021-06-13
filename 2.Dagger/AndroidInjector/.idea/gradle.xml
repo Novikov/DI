@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/AppActivityHierarchy" />
             <option value="$PROJECT_DIR$/AppActivityHierarchyModified" />
             <option value="$PROJECT_DIR$/DaggerApplicationAppActivity" />
+            <option value="$PROJECT_DIR$/DaggerApplicationAppActivityFragment" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
