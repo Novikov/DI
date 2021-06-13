@@ -1,25 +1,15 @@
 package com.app.daggerapplicationappactivity.app;
 
-import android.app.Application;
-
-import javax.inject.Inject;
-
 import dagger.android.AndroidInjector;
-import dagger.android.DispatchingAndroidInjector;
-import dagger.android.HasAndroidInjector;
+import dagger.android.support.DaggerApplication;
 
-public class App extends Application implements HasAndroidInjector {
-    @Inject
-    DispatchingAndroidInjector<Object> dispatchingAndroidInjector;
+public class App extends DaggerApplication {
+    //Важно сделать правильный импорт dagger.android.support.DaggerApplication
 
     @Override
-    public void onCreate() {
-        super.onCreate();
-        DaggerAppComponent.create().inject(this);
-    }
-
-    @Override
-    public AndroidInjector<Object> androidInjector() {
-        return dispatchingAndroidInjector;
+    protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
+        AppComponent appComponent = DaggerAppComponent.builder().build();
+        appComponent.inject(this);
+        return appComponent;
     }
 }

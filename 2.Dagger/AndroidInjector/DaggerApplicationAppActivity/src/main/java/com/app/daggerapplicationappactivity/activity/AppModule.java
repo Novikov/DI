@@ -4,9 +4,9 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class ActivityCustomModule {
+public class AppModule {
     @Provides
-    String provideStringFromActivity(){
-        return "String from activity";
+    String provideString(){
+        return "string from app module";
     }
 }

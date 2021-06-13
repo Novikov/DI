@@ -1,11 +1,12 @@
 package com.app.daggerapplicationappactivity.app;
 
-import com.app.daggerapplicationappactivity.activity.ActivityModule;
+import com.app.daggerapplicationappactivity.activity.ActivityProviderModule;
+import com.app.daggerapplicationappactivity.activity.AppModule;
 
 import dagger.Component;
-import dagger.android.AndroidInjectionModule;
+import dagger.android.AndroidInjector;
+import dagger.android.support.AndroidSupportInjectionModule;
+import dagger.android.support.DaggerApplication;
 
-@Component(modules = {AndroidInjectionModule.class, ActivityModule.class})
-public interface AppComponent {
-    void inject(App application);
-}
+@Component(modules = {AndroidSupportInjectionModule.class, ActivityProviderModule.class, AppModule.class})
+public interface AppComponent extends AndroidInjector<DaggerApplication>{}
