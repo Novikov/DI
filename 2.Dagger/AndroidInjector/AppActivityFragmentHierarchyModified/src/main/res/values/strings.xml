@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppActivityFragmentHierarchyModified</string>
+    <string name="blank_fragment">blank fragment</string>
 </resources>
