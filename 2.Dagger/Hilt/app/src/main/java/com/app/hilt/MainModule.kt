@@ -13,9 +13,4 @@ class MainModule {
     fun provideString():String{
         return "String from main module"
     }
-
-    @Provides
-    fun provideInteger(): Int {
-        return 5
-    }
 }
