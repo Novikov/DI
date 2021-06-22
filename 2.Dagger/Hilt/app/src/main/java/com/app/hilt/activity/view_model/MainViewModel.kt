@@ -1,4 +1,4 @@
-package com.app.hilt
+package com.app.hilt.activity.view_model
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
